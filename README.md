@@ -123,6 +123,30 @@ You can use it now
 | ![image](https://github.com/sonocotta/esp32-audio-dock/assets/5459747/cd0e7cb2-4a15-48fc-b308-0281e414619e)| ![image](https://github.com/sonocotta/esp32-audio-dock/assets/5459747/edcb5a3b-bead-44d8-b51d-4c36ed19b7da)| ![image](https://github.com/sonocotta/esp32-audio-dock/assets/5459747/20586bb4-bc51-4cfb-802a-c6072987c1da)| ![image](https://github.com/sonocotta/esp32-audio-dock/assets/5459747/dfdb89dd-755b-42fe-a381-a92011f9c681)
 
 
+## SnapCast-Client
+SnapCast is an openSource Multi-Room-Audio Protocol. Which is mainly developed by https://github.com/badaix. In comparision to the SqueezeLite-Solution it offers a much better syncing experience. I tested the sync and for me it was not hearable that the speakes arent wired together. Due the hard work of the Music-Assistant Developers its quite easy to use this. 
+
+ **What will I need to get all stuff running?** 
+
+- HomeAssistant Installation with the capabilities to run Addons
+- A PC (preffered Linux or macOS but windows should also work)
+- SnapCast-Server (e.g an Raspberry Pi, doesnt need to be an Pi4) or a Proxmox VM in the coming months the SnapCast Server will be available as an Addon for HomeAssistant which makes this again a lot easier.
+
+**What are we doing now?**
+1. Install the Music-Assistant Addon
+2. Install a SnapCast-Server
+3. Configure Music-Assistant to use the SnapCast-Server as an Player
+4. Install the Development-Tools for building the Code for the ESP32
+5. Changing the Settings to your needs (WiFi-Password, Player-Name etc.) 
+
+### Installation of the Music-Assistant Addon 
+**Note:** The Addon is released as an **BETA** which means that Bugs are possible and changes are possible. The developers of MusicAssistant created already a detailed installation instructions. 
+To summarise it: 
+1. Install HACS: https://hacs.xyz/docs/setup/prerequisites
+2. Install the Integration
+3. Install the Addon.
+**For more details please read here: https://github.com/music-assistant/hass-music-assistant#installation-of-the-home-assistant-beta-integration**
+
 ## Hardware
 
 ![image](https://user-images.githubusercontent.com/5459747/225272625-777fa75d-bccc-427c-a861-e01784543c87.png)
